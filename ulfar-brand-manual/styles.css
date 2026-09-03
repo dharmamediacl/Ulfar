@@ -1,0 +1,742 @@
+/* =========================================================
+   ULFAR — MANUAL DE IDENTIDAD CORPORATIVA
+   Réplica web del documento original (18 páginas, 1008x612pt)
+   ========================================================= */
+
+:root {
+
+  --ulfar-white: #FAF9F6;
+  --ulfar-red: #D02332;
+  --ulfar-black: #191D20;
+
+  /* Balboa ExtraBold no está disponible como webfont libre.
+     Poppins (800/900) se usa como fallback visual temporal
+     para los títulos, tal como indica el manual. */
+  --font-display: "Poppins", "Impact", "Arial Narrow", sans-serif;
+  --font-body: "Montserrat", Arial, sans-serif;
+
+  --page-w: 1008px;
+  --page-h: 612px;
+  --margin: 42px;
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #cfcfcf;
+  color: var(--ulfar-black);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, p, ol {
+  margin: 0;
+}
+
+
+/* =========================================================
+   MANUAL / PAGE
+   ========================================================= */
+
+.manual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  padding: 36px 0 120px;
+}
+
+.page {
+  position: relative;
+  width: var(--page-w);
+  height: var(--page-h);
+  overflow: hidden;
+  background: var(--ulfar-white);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+  flex-shrink: 0;
+}
+
+.page-content {
+  padding: 92px var(--margin) var(--margin);
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+.big-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 0.96;
+  letter-spacing: -0.5px;
+  color: var(--ulfar-black);
+}
+
+.body-copy {
+  font-size: 17px;
+  line-height: 1.55;
+  font-weight: 600;
+  max-width: 46ch;
+}
+
+.body-copy + .body-copy {
+  margin-top: 16px;
+}
+
+.accent-heading {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--ulfar-red);
+}
+
+.red-line {
+  width: 96px;
+  height: 8px;
+  border-radius: 20px;
+  background: var(--ulfar-red);
+  margin: 16px 0 26px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.manual-header {
+  position: absolute;
+  top: var(--margin);
+  left: var(--margin);
+  right: var(--margin);
+  height: 33px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-bottom: 1.5px solid var(--ulfar-black);
+  padding-bottom: 9px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.header-icon {
+  width: 34px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* =========================================================
+   PAGE BADGE (número de página)
+   ========================================================= */
+
+.page-badge {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 170px;
+  height: 165px;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.badge-black {
+  position: absolute;
+  right: 155px;
+  bottom: 0;
+  width: 43px;
+  height: 82px;
+  background: var(--ulfar-black);
+  border-radius: 22px 22px 0 0;
+}
+
+.badge-red {
+  position: absolute;
+  right: 42px;
+  bottom: 0;
+  width: 91px;
+  height: 164px;
+  background: var(--ulfar-red);
+  border-radius: 45px 45px 0 0;
+  color: var(--ulfar-white);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 42px;
+}
+
+.image-page .page-badge,
+.dark-pattern .page-badge {
+  filter: drop-shadow(0 2px 10px rgba(0,0,0,.35));
+}
+
+
+/* =========================================================
+   PATTERN BACKGROUNDS
+   ========================================================= */
+
+.dark-pattern {
+  background-color: var(--ulfar-black);
+  background-image: url("assets/pattern-ulfar-dark.png");
+  background-repeat: repeat;
+  background-size: 300px auto;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-isotipo {
+  width: 420px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   COVER — PAGE 1
+   ========================================================= */
+
+.page-cover {
+  display: grid;
+  grid-template-rows: 65% 35%;
+}
+
+.cover-dark {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cover-logo {
+  width: 640px;
+  max-height: 250px;
+  object-fit: contain;
+  transform: translateY(18px);
+}
+
+.cover-light {
+  background: var(--ulfar-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--margin);
+}
+
+.cover-light h1 {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.05;
+}
+
+.cover-light h1 span {
+  display: block;
+  margin-top: 4px;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   BRAND PAGES (isotipo / imagotipo / isologo) — 4, 5, 6
+   ========================================================= */
+
+.brand-layout {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 38% 62%;
+  align-items: center;
+  gap: 30px;
+}
+
+.brand-preview {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-preview img {
+  max-width: 92%;
+  max-height: 84%;
+}
+
+.brand-preview .isologo-img {
+  max-height: 100%;
+}
+
+
+/* =========================================================
+   PAGE 7 — MARCAS INSTITUCIONALES
+   ========================================================= */
+
+.institutional-layout {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 38% 62%;
+  align-items: center;
+  gap: 30px;
+}
+
+.institutional-layout .big-title {
+  font-size: 44px;
+}
+
+.institutional-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.logo-card {
+  height: 150px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 34px;
+}
+
+.logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dark-card {
+  background: var(--ulfar-black);
+}
+
+.light-card {
+  background: var(--ulfar-white);
+  border: 1px solid #e4e1da;
+}
+
+
+/* =========================================================
+   PAGE 8 — NORMATIVA DE USO
+   ========================================================= */
+
+.rules-layout {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 36% 64%;
+  align-items: center;
+  gap: 20px;
+}
+
+.rules-list {
+  list-style: none;
+  counter-reset: rule;
+  padding: 0;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.rules-list li {
+  counter-increment: rule;
+  position: relative;
+  padding-left: 22px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.rules-list li::before {
+  content: counter(rule) ".";
+  position: absolute;
+  left: 0;
+  font-weight: 800;
+}
+
+.dont-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(90px, auto);
+  gap: 18px 26px;
+}
+
+.dont-example {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+}
+
+.dont-index {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.dont-mark {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+.dont-colors {
+  color: #b6178f;
+  background: linear-gradient(90deg, #e6197a 0%, #7a3bd6 55%, #7a3bd6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dont-deform {
+  display: inline-block;
+  color: var(--ulfar-black);
+  transform: scaleX(1.7) skewX(-10deg);
+  transform-origin: left center;
+}
+
+.dont-typeface {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--ulfar-black);
+}
+
+.dont-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--ulfar-black);
+}
+
+.dont-texture {
+  background-image: url("assets/camioneta-ulfar.jpg");
+  background-size: 260px auto;
+  background-position: -40px -60px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dont-text {
+  align-items: flex-start;
+}
+
+.dont-text p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.inline-logo {
+  height: 14px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+
+/* =========================================================
+   PAGE 9 — TIPOGRAFÍAS
+   ========================================================= */
+
+.type-layout {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 34% 66%;
+  gap: 40px;
+  align-items: center;
+}
+
+.type-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.type-block {
+  border-bottom: 1px solid #e4e1da;
+  padding-bottom: 16px;
+}
+
+.type-block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.type-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--ulfar-red);
+  margin-bottom: 8px;
+}
+
+.balboa {
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+.montserrat-bold {
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.montserrat-semibold {
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.type-block h3 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+h3.montserrat-semibold {
+  margin-top: 18px;
+}
+
+.alphabet {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   PAGE 10 — PALETA DE COLOR
+   ========================================================= */
+
+.color-layout {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  gap: 30px;
+}
+
+.color-layout .body-copy {
+  max-width: 34ch;
+}
+
+.color-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 330px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.color-card-stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.color-card {
+  padding: 24px 22px;
+}
+
+.color-card h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 19px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.color-card strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.color-card h4 {
+  font-size: 13px;
+  font-weight: 800;
+  margin: 8px 0 2px;
+}
+
+.color-card p {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.floral {
+  background: var(--ulfar-white);
+  color: var(--ulfar-black);
+  border: 1px solid #eee;
+}
+
+.cardinal {
+  color: var(--ulfar-white);
+  background: var(--ulfar-red);
+}
+
+.pearl {
+  color: var(--ulfar-white);
+  background: var(--ulfar-black);
+}
+
+
+/* =========================================================
+   DIVIDER PAGES — 11, 13
+   ========================================================= */
+
+.divider-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.divider-block {
+  margin-top: -40px;
+}
+
+.divider-title {
+  font-size: 66px;
+}
+
+
+/* =========================================================
+   PAGE 12 — PATRÓN
+   ========================================================= */
+
+.pattern-layout {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 38% 62%;
+  gap: 30px;
+  align-items: center;
+}
+
+.pattern-preview {
+  height: 400px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--ulfar-white);
+  border: 1px solid #eee;
+}
+
+.pattern-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   IMAGE APPLICATION PAGES — 14, 15, 16, 17
+   ========================================================= */
+
+.image-page {
+  background: #eee;
+}
+
+.image-page > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   FLOATING BUTTON
+   ========================================================= */
+
+.floating-controls {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1000;
+}
+
+.floating-controls button {
+  appearance: none;
+  border: 0;
+  padding: 15px 24px;
+  border-radius: 50px;
+  background: var(--ulfar-red);
+  color: var(--ulfar-white);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0,0,0,.22);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.floating-controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.28);
+}
+
+
+/* =========================================================
+   RESPONSIVE PREVIEW (pantalla)
+   ========================================================= */
+
+@media (max-width: 1080px) {
+  .page {
+    width: 94vw;
+    height: calc(94vw * 0.6071);
+  }
+}
+
+
+/* =========================================================
+   PRINT / PDF
+   ========================================================= */
+
+@page {
+  size: 1008px 612px;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .manual {
+    display: block;
+    padding: 0;
+    gap: 0;
+  }
+
+  .page {
+    width: 1008px;
+    height: 612px;
+    margin: 0;
+    box-shadow: none;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .page:last-child {
+    page-break-after: auto;
+  }
+
+  .floating-controls {
+    display: none;
+  }
+}
