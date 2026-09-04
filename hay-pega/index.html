@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hay Pega · Conectamos personas con trabajos reales</title>
+<meta name="description" content="Portal de empleo chileno. Ofertas verificadas, publicadas todos los días, en tu región. Buscar y postular es gratis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="top">
+  <nav class="navbar container">
+    <a href="#top" class="logo logo--on-black" aria-label="Hay Pega, inicio">
+      <span class="logo__bubble">
+        <span class="logo__line">hay</span>
+        <span class="logo__line">pega</span>
+      </span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Inicio</a></li>
+      <li><a href="#buscas-trabajo" class="nav-link">¿Buscas trabajo?</a></li>
+      <li><a href="#contacto" class="nav-link">Publicar aviso</a></li>
+    </ul>
+
+    <a href="#contacto" class="btn btn-mint btn-sm nav-cta">Publicar aviso</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-link">Inicio</a>
+    <a href="#buscas-trabajo" class="mobile-link">¿Buscas trabajo?</a>
+    <a href="#contacto" class="mobile-link">Publicar aviso</a>
+    <a href="#contacto" class="btn btn-mint mobile-cta">Publicar aviso</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ SECCIÓN 1 · HOME ============ -->
+<section id="home" class="s1-hero">
+  <div class="container s1-hero__grid">
+    <div class="s1-hero__copy reveal">
+      <span class="eyebrow eyebrow--mint">Portal de empleo chileno</span>
+      <h1 class="display">
+        <span class="w-bold">Conectamos</span> en <span class="w-light">personas</span><br>
+        con <span class="w-bold">trabajos</span> <span class="w-light">reales.</span>
+      </h1>
+      <p class="lead lead--onblack">Ofertas verificadas, publicadas todos los días, en las regiones donde de verdad estás buscando. Sin avisos vencidos, sin letra chica, sin vueltas.</p>
+      <div class="btn-row">
+        <a href="#buscas-trabajo" class="btn btn-mint">Ver ofertas</a>
+        <a href="#contacto" class="btn btn-outline btn-outline--onblack">Publicar un aviso</a>
+      </div>
+      <div class="chip-row" aria-label="Regiones con cobertura">
+        <span class="chip chip--mint">Región Metropolitana</span>
+        <span class="chip chip--purple">Los Lagos</span>
+        <span class="chip chip--outline chip--onblack">Maule</span>
+        <span class="chip chip--mint">Ñuble</span>
+        <span class="chip chip--purple">Araucanía</span>
+        <span class="chip chip--outline chip--onblack">Biobío</span>
+      </div>
+    </div>
+
+    <div class="s1-hero__art reveal">
+      <div class="hero-blob">
+        <div class="hero-blob__photo" aria-hidden="true">
+          <svg viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg" class="person-illustration">
+            <defs>
+              <linearGradient id="personGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3a3a3a"/>
+                <stop offset="1" stop-color="#0a0a0a"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="480" fill="transparent"/>
+            <ellipse cx="200" cy="120" rx="72" ry="82" fill="url(#personGrad)"/>
+            <path d="M70 480c0-95 58-165 130-165s130 70 130 165H70z" fill="url(#personGrad)"/>
+            <rect x="150" y="330" width="150" height="95" rx="10" fill="#e9e9e9"/>
+            <rect x="160" y="340" width="130" height="8" rx="4" fill="#9d48ff"/>
+            <rect x="150" y="418" width="150" height="14" rx="7" fill="#111"/>
+          </svg>
+        </div>
+        <div class="floaty floaty--heart" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.3C0.3 8 2 4.5 5.6 4c2-.3 3.9.7 4.9 2.3C11.5 4.7 13.4 3.7 15.4 4c3.6.5 5.3 4 3.6 7.7C16.5 16.4 12 21 12 21z"/></svg>
+        </div>
+        <div class="floaty floaty--bubble" aria-hidden="true"></div>
+        <div class="floaty floaty--rocket" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2c3 2 5 6 5 10 0 1.5-.3 2.8-.8 4l-1.6-1c.3-1 .4-2 .4-3 0-3-1.4-6.2-3-8-1.6 1.8-3 5-3 8 0 1 .1 2 .4 3l-1.6 1C7.3 14.8 7 13.5 7 12c0-4 2-8 5-10z"/><circle cx="12" cy="10" r="1.6"/><path d="M9 18l-2 3 3-1zM15 18l2 3-3-1z"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-bar reveal">
+  <div class="container trust-bar__row">
+    <div class="trust-item"><strong>120+</strong><span>ofertas activas hoy</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><strong>6</strong><span>regiones con cobertura</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><strong>&lt;24h</strong><span>publicamos en menos de 24 horas</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><strong>18.000+</strong><span>personas en nuestra comunidad</span></div>
+  </div>
+</div>
+
+<!-- Cómo funciona -->
+<section class="how-section">
+  <div class="container">
+    <h2 class="section-title reveal">Simple, <span class="w-light">como debería ser</span></h2>
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <span class="how-num">01</span>
+        <div class="how-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg></div>
+        <h3>Mira las ofertas</h3>
+        <p>Publicamos vacantes reales todos los días en la web y en nuestras redes. Filtra por región y encuentra lo que se ajusta a ti.</p>
+      </div>
+      <div class="how-card reveal">
+        <span class="how-num">02</span>
+        <div class="how-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+        <h3>Postula directo</h3>
+        <p>Sin registros eternos ni formularios de veinte pasos. Contacto claro en cada aviso y listo.</p>
+      </div>
+      <div class="how-card reveal">
+        <span class="how-num">03</span>
+        <div class="how-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H7l-3 3V4z"/></svg></div>
+        <h3>Te contactan</h3>
+        <p>Tu postulación llega directo a la empresa. Nada de intermediarios que se pierden en el camino.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Por qué Hay Pega -->
+<section class="why-section">
+  <div class="container">
+    <h2 class="section-title section-title--onpurple reveal">No se trata de tener más avisos.<br><span class="w-light">Se trata de tener los buenos.</span></h2>
+    <div class="why-grid">
+      <div class="why-card reveal"><h3>Ofertas verificadas</h3><p>Revisamos cada aviso antes de publicarlo. Si no es real, no entra.</p></div>
+      <div class="why-card reveal"><h3>Lenguaje cercano</h3><p>Hablamos como habla la gente. Sin jerga de recursos humanos que nadie entiende.</p></div>
+      <div class="why-card reveal"><h3>Información clara</h3><p>Sueldo, jornada, ubicación y requisitos a la vista desde el primer segundo.</p></div>
+      <div class="why-card reveal"><h3>Difusión en redes</h3><p>Cada vacante se mueve en Instagram y llega a miles de personas el mismo día.</p></div>
+      <div class="why-card reveal"><h3>Publicación rápida</h3><p>Las empresas publican en minutos y su aviso sale online el mismo día.</p></div>
+      <div class="why-card reveal"><h3>Postulación simple</h3><p>Un aviso, un contacto, un clic. Así de directo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Doble puerta -->
+<section class="doors-section">
+  <div class="container doors-grid">
+    <div class="door-card door-card--mint reveal">
+      <h3>Para quienes buscan pega</h3>
+      <p>Ofertas nuevas cada día, en tu región, con información completa y sin costo.</p>
+      <ul class="door-list">
+        <li>Vacantes verificadas y vigentes</li>
+        <li>Alertas por Instagram y WhatsApp</li>
+        <li>Ayuda para armar tu CV</li>
+      </ul>
+      <a href="#buscas-trabajo" class="btn btn-purple">Buscar trabajo</a>
+    </div>
+    <div class="door-card door-card--black reveal">
+      <h3>Para empresas</h3>
+      <p>Llega a miles de personas que sí están buscando, en el canal donde de verdad miran.</p>
+      <ul class="door-list">
+        <li>Publicación el mismo día</li>
+        <li>Difusión en web y redes sociales</li>
+        <li>Planes desde $5.000</li>
+      </ul>
+      <a href="#contacto" class="btn btn-mint">Publicar un aviso</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECCIÓN 2 · BUSCAS TRABAJO ============ -->
+<section id="buscas-trabajo" class="s2">
+  <div class="s2-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--onmint">Para candidatos</span>
+      <h2 class="display display--onmint reveal">¿Buscas pega?<br>Acá están las reales.</h2>
+      <p class="lead lead--onmint reveal">Filtra por región, rubro, jornada o sueldo y quédate solo con las ofertas que te sirven. Buscar y postular es gratis, siempre.</p>
+
+      <form class="search-bar reveal" id="searchForm">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 24 24" class="search-icon"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+          <input type="text" id="searchInput" placeholder="Cargo, empresa o palabra clave. Ej: vendedor, enfermera, bodega">
+        </div>
+        <button type="submit" class="btn btn-black">Buscar</button>
+      </form>
+
+      <div class="quick-chips reveal" id="quickChips">
+        <button class="chip chip--outline chip--onmint" data-quick="parttime">Trabajos part time</button>
+        <button class="chip chip--outline chip--onmint" data-quick="sinexp">Sin experiencia</button>
+        <button class="chip chip--outline chip--onmint" data-quick="rotativos">Turnos rotativos</button>
+        <button class="chip chip--outline chip--onmint" data-quick="remoto">Home office</button>
+        <button class="chip chip--outline chip--onmint" data-quick="finde">Fin de semana</button>
+        <button class="chip chip--outline chip--onmint" data-quick="practica">Práctica profesional</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container s2-layout">
+    <!-- FILTROS DESKTOP -->
+    <aside class="filters-panel" id="filtersPanel">
+      <div class="filters-card">
+        <div class="filters-card__head">
+          <h3>Filtrar ofertas</h3>
+          <button class="link-btn" id="clearAllDesktop">Limpiar todo</button>
+        </div>
+        <div id="filterGroupsDesktop"></div>
+        <button class="btn btn-mint btn-block" id="applyFiltersDesktop">Aplicar filtros</button>
+      </div>
+    </aside>
+
+    <!-- RESULTADOS -->
+    <div class="results-col">
+      <div class="results-toolbar reveal">
+        <span class="results-count" id="resultsCount">14 ofertas encontradas</span>
+        <label class="sort-select">
+          Ordenar por
+          <select id="sortSelect">
+            <option value="recientes">Más recientes</option>
+            <option value="sueldo">Mayor sueldo</option>
+            <option value="cercanas">Más cercanas</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="active-filters" id="activeFilters"></div>
+
+      <div class="jobs-list" id="jobsList" aria-live="polite"></div>
+
+      <div class="empty-state hidden" id="emptyState">
+        <svg viewBox="0 0 120 120" class="empty-illus"><circle cx="60" cy="60" r="52" fill="none" stroke="#9d48ff" stroke-width="4" stroke-dasharray="8 10"/><circle cx="48" cy="55" r="4" fill="#111"/><circle cx="72" cy="55" r="4" fill="#111"/><path d="M45 75c5 6 25 6 30 0" stroke="#111" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+        <h3>No encontramos ofertas con esos filtros</h3>
+        <p>Prueba ampliando la región o sacando alguno de los filtros. Publicamos vacantes nuevas todos los días hábiles.</p>
+        <button class="btn btn-purple" id="emptyClearBtn">Limpiar filtros</button>
+      </div>
+
+      <button class="btn btn-outline btn-block load-more hidden" id="loadMoreBtn">Cargar más ofertas</button>
+    </div>
+  </div>
+
+  <!-- Alerta de empleo -->
+  <div class="alert-block reveal">
+    <div class="container alert-block__inner">
+      <div>
+        <h3>¿No encontraste lo tuyo hoy?</h3>
+        <p>Déjanos tu contacto y te avisamos cuando salga una vacante que calce con lo que estás buscando en tu región.</p>
+      </div>
+      <form class="alert-form" id="alertForm">
+        <input type="text" id="alertInput" placeholder="Tu correo o WhatsApp" required>
+        <button type="submit" class="btn btn-mint">Activar alerta</button>
+      </form>
+    </div>
+    <p class="alert-note container">Sin spam. Solo ofertas que coincidan con tus filtros.</p>
+    <p class="form-success hidden container" id="alertSuccess">¡Listo! Te avisaremos apenas salga una oferta para ti.</p>
+  </div>
+
+  <!-- Bloque CV -->
+  <div class="cv-block reveal">
+    <div class="container cv-block__inner">
+      <div class="cv-block__text">
+        <span class="eyebrow eyebrow--mint">¿Buscas crear tu CV?</span>
+        <h3>100% <span class="w-light">personalizado</span></h3>
+        <p>Un buen CV es la diferencia entre que te llamen y que no. Te armamos uno claro, ordenado y pensado para el cargo al que estás postulando: sin plantillas genéricas y con la información que las empresas de verdad leen.</p>
+        <a href="#contacto" class="btn btn-mint">Quiero mi CV</a>
+      </div>
+      <div class="cv-block__art" aria-hidden="true">
+        <svg viewBox="0 0 200 240"><rect x="20" y="10" width="160" height="220" rx="14" fill="#fff"/><rect x="40" y="35" width="80" height="10" rx="5" fill="#9d48ff"/><rect x="40" y="55" width="120" height="6" rx="3" fill="#ddd"/><rect x="40" y="70" width="120" height="6" rx="3" fill="#ddd"/><rect x="40" y="85" width="90" height="6" rx="3" fill="#ddd"/><rect x="40" y="110" width="60" height="8" rx="4" fill="#24e79f"/><rect x="40" y="130" width="120" height="6" rx="3" fill="#ddd"/><rect x="40" y="145" width="120" height="6" rx="3" fill="#ddd"/><rect x="40" y="160" width="70" height="6" rx="3" fill="#ddd"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ candidatos -->
+  <div class="faq-block reveal">
+    <div class="container">
+      <h3 class="section-title">Preguntas frecuentes</h3>
+      <div class="accordion" id="faqCandidatos">
+        <div class="acc-item">
+          <button class="acc-trigger">¿Tengo que pagar algo para postular?<span class="acc-plus"></span></button>
+          <div class="acc-panel"><p>No. Buscar y postular en Hay Pega es gratis y siempre lo va a ser. Solo las empresas pagan por destacar sus avisos.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger">¿Necesito crear una cuenta?<span class="acc-plus"></span></button>
+          <div class="acc-panel"><p>No. Cada aviso tiene el contacto directo de la empresa. Postulas y listo.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger">¿Cómo sé que las ofertas son reales?<span class="acc-plus"></span></button>
+          <div class="acc-panel"><p>Revisamos cada aviso antes de publicarlo y verificamos que la empresa exista. Si detectamos algo raro, no se publica.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger">¿Cada cuánto publican vacantes nuevas?<span class="acc-plus"></span></button>
+          <div class="acc-panel"><p>Todos los días hábiles, en la web y en nuestro Instagram <a href="https://instagram.com/haypegacl" target="_blank" rel="noopener">@haypegacl</a>.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger">¿En qué regiones tienen ofertas?<span class="acc-plus"></span></button>
+          <div class="acc-panel"><p>Hoy cubrimos Región Metropolitana, Los Lagos, Maule, Ñuble, Araucanía y Biobío. Vamos sumando más.</p></div>
+        </div>
+      </div>
+      <div class="faq-close reveal">
+        <p>Cada día se publican vacantes nuevas. Síguenos en Instagram y entérate primero.</p>
+        <a href="https://instagram.com/haypegacl" target="_blank" rel="noopener" class="btn btn-outline">Seguir a @haypegacl</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECCIÓN 3 · CONTACTO / AVISOS ============ -->
+<section id="contacto" class="s3">
+  <div class="container">
+    <span class="eyebrow eyebrow--mint reveal">Para empresas</span>
+    <h2 class="display display--onblack reveal">Publica tu aviso y llega a <span class="text-mint">quien sí está buscando.</span></h2>
+    <p class="lead lead--onblack reveal">Tu vacante en la web y en las redes de Hay Pega, frente a miles de personas de tu región. Publicación el mismo día, sin contratos ni permanencia.</p>
+
+    <div class="s3-layout">
+      <!-- Planes -->
+      <div class="plans-col">
+        <div class="plans-scroll">
+          <div class="plan-card reveal">
+            <h4>Gratis</h4>
+            <p class="plan-tag">Etapa inicial</p>
+            <div class="plan-price">$0</div>
+            <ul>
+              <li>Publicación básica en el portal</li>
+              <li>Vigencia de 15 días</li>
+            </ul>
+            <a href="#form-aviso" class="btn btn-outline btn-block">Publicar mi aviso</a>
+          </div>
+
+          <div class="plan-card reveal">
+            <h4>Básico Web</h4>
+            <p class="plan-tag">Tu aviso en el portal</p>
+            <div class="plan-price">$5.000</div>
+            <ul>
+              <li>Publicación completa en la web</li>
+              <li>Vigencia de 30 días</li>
+              <li>Contacto directo en el aviso</li>
+            </ul>
+            <a href="#form-aviso" class="btn btn-outline btn-block">Publicar mi aviso</a>
+          </div>
+
+          <div class="plan-card reveal">
+            <h4>Básico RRSS</h4>
+            <p class="plan-tag">Tu aviso en redes</p>
+            <div class="plan-price">$5.000</div>
+            <ul>
+              <li>Post en el feed de Instagram</li>
+              <li>Difusión a toda la comunidad</li>
+            </ul>
+            <a href="#form-aviso" class="btn btn-outline btn-block">Publicar mi aviso</a>
+          </div>
+
+          <div class="plan-card plan-card--featured reveal">
+            <span class="plan-badge">Más elegido</span>
+            <h4>Premium RRSS</h4>
+            <p class="plan-tag">Máxima exposición social</p>
+            <div class="plan-price">$7.000</div>
+            <ul>
+              <li>Post en feed + stories</li>
+              <li>Difusión reforzada el día de publicación</li>
+            </ul>
+            <a href="#form-aviso" class="btn btn-mint btn-block">Publicar mi aviso</a>
+          </div>
+
+          <div class="plan-card reveal">
+            <h4>Premium</h4>
+            <p class="plan-tag">Web + redes</p>
+            <div class="plan-price">$9.000</div>
+            <ul>
+              <li>Publicación en el portal</li>
+              <li>Post en feed + stories</li>
+              <li>Mejor posición en los listados</li>
+            </ul>
+            <a href="#form-aviso" class="btn btn-outline btn-block">Publicar mi aviso</a>
+          </div>
+
+          <div class="plan-card plan-card--enterprise reveal">
+            <h4>Plan Empresa</h4>
+            <p class="plan-tag">Para quienes contratan seguido</p>
+            <div class="plan-price plan-price--sm">$59.990 – $99.990<span>/mes</span></div>
+            <ul>
+              <li>Varias ofertas mensuales</li>
+              <li>Posición destacada permanente</li>
+              <li>Difusión prioritaria en redes</li>
+              <li>Acompañamiento en el proceso</li>
+            </ul>
+            <a href="#form-aviso" class="btn btn-purple btn-block">Hablar con el equipo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="form-col reveal" id="form-aviso">
+        <div class="form-card">
+          <h3>Cuéntanos qué necesitas</h3>
+          <p class="form-sub">Completa el formulario y te respondemos el mismo día hábil con los pasos para publicar.</p>
+
+          <form id="avisoForm" novalidate>
+            <div class="field">
+              <label for="f-empresa">Nombre de la empresa *</label>
+              <input type="text" id="f-empresa" name="empresa" required>
+              <span class="field-error">Este campo es obligatorio</span>
+            </div>
+            <div class="field">
+              <label for="f-contacto">Nombre de contacto *</label>
+              <input type="text" id="f-contacto" name="contacto" required>
+              <span class="field-error">Este campo es obligatorio</span>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-email">Correo electrónico *</label>
+                <input type="email" id="f-email" name="email" required>
+                <span class="field-error">Ingresa un correo válido</span>
+              </div>
+              <div class="field">
+                <label for="f-telefono">Teléfono o WhatsApp *</label>
+                <input type="tel" id="f-telefono" name="telefono" required>
+                <span class="field-error">Este campo es obligatorio</span>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-region">Región *</label>
+                <select id="f-region" name="region" required>
+                  <option value="">Selecciona una región</option>
+                  <option>Región Metropolitana</option>
+                  <option>Los Lagos</option>
+                  <option>Maule</option>
+                  <option>Ñuble</option>
+                  <option>Araucanía</option>
+                  <option>Biobío</option>
+                </select>
+                <span class="field-error">Selecciona una región</span>
+              </div>
+              <div class="field">
+                <label for="f-cargo">Cargo a publicar *</label>
+                <input type="text" id="f-cargo" name="cargo" required>
+                <span class="field-error">Este campo es obligatorio</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-plan">Plan de interés</label>
+              <select id="f-plan" name="plan">
+                <option value="">Selecciona un plan</option>
+                <option>Gratis</option>
+                <option>Básico Web</option>
+                <option>Básico RRSS</option>
+                <option>Premium RRSS</option>
+                <option>Premium</option>
+                <option>Plan Empresa</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-desc">Descripción de la vacante *</label>
+              <textarea id="f-desc" name="descripcion" rows="4" required></textarea>
+              <span class="field-error">Cuéntanos brevemente sobre la vacante</span>
+            </div>
+
+            <button type="submit" class="btn btn-mint btn-block">Enviar solicitud</button>
+            <p class="legal-text">Al enviar aceptas que te contactemos por este medio. No compartimos tus datos con terceros.</p>
+          </form>
+
+          <div class="form-success form-success--card hidden" id="avisoSuccess">
+            <svg viewBox="0 0 24 24" class="success-check"><path d="M5 12l5 5L20 7"/></svg>
+            <h4>¡Listo! Recibimos tu solicitud.</h4>
+            <p>Te escribimos hoy mismo para coordinar la publicación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contacto directo -->
+    <div class="contact-cards">
+      <a href="https://wa.me/56900000000" target="_blank" rel="noopener" class="contact-card reveal">
+        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-3.6-6.7L20 4l-1 3.6A7.96 7.96 0 0 1 20 12z"/><path d="M8.5 9.5c.3 2.5 2.5 4.7 5 5l1-1.4-2.4-1-.8.8c-1-.6-1.9-1.5-2.5-2.5l.8-.8-1-2.4z"/></svg></div>
+        <h4>WhatsApp</h4>
+        <p>Respuesta rápida en horario hábil</p>
+        <span class="contact-detail">+56 9 0000 0000</span>
+      </a>
+      <a href="mailto:contacto@haypega.cl" class="contact-card reveal">
+        <div class="contact-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <h4>Correo</h4>
+        <p>Para propuestas y planes empresa</p>
+        <span class="contact-detail">contacto@haypega.cl</span>
+      </a>
+      <a href="https://instagram.com/haypegacl" target="_blank" rel="noopener" class="contact-card reveal">
+        <div class="contact-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
+        <h4>Instagram</h4>
+        <p>Escríbenos por DM</p>
+        <span class="contact-detail">@haypegacl</span>
+      </a>
+    </div>
+
+    <!-- FAQ empresas -->
+    <div class="faq-block faq-block--onblack reveal">
+      <h3 class="section-title section-title--onblack">Preguntas frecuentes</h3>
+      <div class="accordion accordion--onblack" id="faqEmpresas">
+        <div class="acc-item">
+          <button class="acc-trigger">¿Cuánto demora en publicarse mi aviso?<span class="acc-plus"></span></button>
+          <div class="acc-panel"><p>Si nos escribes en horario hábil, el mismo día. En la mayoría de los casos, en menos de dos horas.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger">¿Cuánto dura publicado el aviso?<span class="acc-plus"></span></button>
+          <div class="acc-panel"><p>30 días en el portal, o hasta que nos avises que cerraste el proceso.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger">¿Puedo modificar el aviso después?<span class="acc-plus"></span></button>
+          <div class="acc-panel"><p>Sí. Escríbenos y lo actualizamos sin costo.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger">¿Hay contrato o permanencia?<span class="acc-plus"></span></button>
+          <div class="acc-panel"><p>No. Pagas por publicación o por mes, y decides cuándo seguir.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger">¿Reciben ustedes las postulaciones?<span class="acc-plus"></span></button>
+          <div class="acc-panel"><p>Por defecto llegan directo a tu correo o WhatsApp. Si prefieres que filtremos candidatos, lo conversamos con el plan Empresa.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo logo--on-black">
+        <span class="logo__bubble">
+          <span class="logo__line">hay</span>
+          <span class="logo__line">pega</span>
+        </span>
+      </a>
+      <p>Conectamos personas con trabajos reales.</p>
+    </div>
+    <div class="footer-links">
+      <h5>Navegación</h5>
+      <a href="#home">Inicio</a>
+      <a href="#buscas-trabajo">¿Buscas trabajo?</a>
+      <a href="#contacto">Publicar aviso</a>
+      <a href="https://instagram.com/haypegacl" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div class="footer-regions">
+      <h5>Regiones</h5>
+      <div class="chip-row">
+        <span class="chip chip--outline chip--onblack">Región Metropolitana</span>
+        <span class="chip chip--outline chip--onblack">Los Lagos</span>
+        <span class="chip chip--outline chip--onblack">Maule</span>
+        <span class="chip chip--outline chip--onblack">Ñuble</span>
+        <span class="chip chip--outline chip--onblack">Araucanía</span>
+        <span class="chip chip--outline chip--onblack">Biobío</span>
+      </div>
+    </div>
+    <div class="footer-social">
+      <h5>Síguenos</h5>
+      <a href="https://instagram.com/haypegacl" target="_blank" rel="noopener" class="social-link">Instagram · @haypegacl</a>
+      <a href="https://wa.me/56900000000" target="_blank" rel="noopener" class="social-link">WhatsApp</a>
+      <a href="mailto:contacto@haypega.cl" class="social-link">Correo</a>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>Hay Pega · Chile · @haypegacl · © <span id="year"></span></p>
+  </div>
+</footer>
+
+<!-- ============ DRAWER DETALLE AVISO ============ -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="job-drawer" id="jobDrawer" aria-hidden="true">
+  <button class="drawer-close" id="drawerClose" aria-label="Cerrar">✕</button>
+  <div class="drawer-content" id="drawerContent"></div>
+</aside>
+
+<!-- ============ MOBILE FILTERS FAB + BOTTOM SHEET ============ -->
+<button class="filters-fab" id="filtersFab">
+  Filtros <span class="fab-badge hidden" id="fabBadge">0</span>
+</button>
+
+<div class="sheet-overlay" id="sheetOverlay"></div>
+<div class="filters-sheet" id="filtersSheet" aria-hidden="true">
+  <div class="filters-sheet__head">
+    <h3>Filtrar ofertas</h3>
+    <button class="drawer-close" id="sheetClose" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="filters-sheet__body" id="filterGroupsMobile"></div>
+  <div class="filters-sheet__foot">
+    <button class="link-btn" id="clearAllMobile">Limpiar todo</button>
+    <button class="btn btn-mint btn-block" id="applyFiltersMobile">Ver resultados</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
