@@ -11,10 +11,10 @@ Archivos: `index.html`, `styles.css`, `app.js` y `assets/` (`marca/`, `fotos/`, 
 | Archivo | Uso en el sitio |
 |---|---|
 | `ebano-logotipo.svg` | Principal a color (Ébano + hoja Arcilla). Header sobre Marfil |
-| `ebano-logotipo-negativo.svg` | Marfil + hoja Arcilla. Footer sobre fondo Noche |
-| `ebano-logotipo-mono-marfil.svg` | Una tinta clara. Hero sobre foto con velo Ébano 45 % |
+| `ebano-logotipo-negativo.svg` | Marfil + hoja Arcilla. Intro, header sobre el hero y footer |
+| `ebano-logotipo-mono-marfil.svg` | Una tinta clara (disponible para fotos con velo) |
 | `ebano-logotipo-mono-ebano.svg` | Una tinta oscura (disponible) |
-| `ebano-isotipo.svg` / `ebano-isotipo-negativo.svg` | Favicon y firma del cierre |
+| `ebano-isotipo.svg` / `ebano-isotipo-negativo.svg` | Favicon y firma del cierre (negativo sobre Ébano) |
 
 Reglas del manual que aplica el CSS:
 - Logotipo de 160 px de ancho como mínimo. Nunca se reescribe con una fuente.
@@ -22,7 +22,29 @@ Reglas del manual que aplica el CSS:
 - Oliva no se usa en texto pequeño, porque sobre Papel da 4,2 : 1.
 - Etiquetas en Inter 600, 10 px, +20 % de tracking y versales. Titulares en Instrument Serif con −1 % de tracking.
 - Fotos con tratamiento «saturación −18 %, contraste +4 %, leve calidez», salvo las de José Tomás.
-- Grafismos: una familia por superficie, siempre recortada por el borde. Vetas al 7 % en Nosotros y humo al 6–8 % en Cómo trabajamos, Cierre y Footer.
+- Grafismos: una familia por superficie, siempre recortada por el borde. Vetas al 7 % en el manifiesto y humo al 7–10 % en el hero, Cómo trabajamos y el Cierre, con una deriva lenta.
+
+## Diseño «vida»: el relato y el movimiento
+
+La web cuenta el concepto del manual, «Del fuego al encuentro», en secciones con movimiento propio:
+
+| Sección | Qué hace |
+|---|---|
+| Intro | El logotipo se revela sobre Noche y el telón sube (1,3 s) |
+| Hero | La foto entra con un zoom lento, el titular sube línea por línea y una luz de brasa respira desde abajo. Es luz, no llamas ilustradas, como pide el manual |
+| Cinta | Las experiencias pasan en una cinta Arcilla continua |
+| Manifiesto | Cada palabra se enciende a medida que se lee |
+| Cuatro actos | Scroll horizontal fijado en escritorio, con barra de progreso: I El fuego, II La mesa, III El encuentro, IV El evento. En móvil van en vertical |
+| Experiencias | Lista interactiva. La fila se llena de Ébano y una foto sigue al cursor. Al hacer clic se preselecciona la experiencia en el formulario |
+| El oficio | Galería real con parallax y contador de años de José Tomás |
+| Cómo trabajamos | La línea Arcilla se enciende con el scroll y marca cada paso |
+| Cotizar | La experiencia se elige con botones (chips) y las etiquetas de los campos flotan |
+
+En todo el sitio:
+- Cursor de brasa y botones magnéticos, solo con mouse.
+- El header se esconde al bajar y vuelve al subir.
+- Con «reducir movimiento» activado en el sistema, todo se muestra quieto y completo.
+- Sin JavaScript, todo el contenido sigue visible.
 
 ## Fotos pendientes de subir
 
