@@ -1,19 +1,25 @@
-# Ébano | versión corregida para publicación
+# ébano | Guía de publicación
 
-## Qué incluye
-- Hero aprobado, fotografías reales de José Tomás y del oficio, y recursos SVG del sitio.
-- Estilos responsive con ajustes de recorte, enfoque visible y movimiento reducido.
-- Archivos duplicados de macOS y PNG generados no usados fuera de la carpeta de publicación.
-- Formulario con ruta PHP opcional y alternativa mailto cuando el servidor no esté listo.
+## Antes de subir
+1. Sube los logos y las fotos que faltan en `assets/` (la lista está en `README.md`).
+2. Revisa el sitio con un servidor local (Live Server). Prueba en móvil y escritorio: menú, preguntas frecuentes y formulario.
+3. Completa `og:image` (URL absoluta), `og:url` y la canonical con el dominio final.
 
-## Formulario — CONFIGURACIÓN NECESARIA
-Por defecto **NO se envía automáticamente**. El endpoint `api/cotizacion.php` requiere un hosting PHP con función `mail()` operativa y variable de entorno `EBANO_MAIL_FROM` con un correo real autorizado en el dominio. Debes verificar SPF, DKIM y entregabilidad del hosting, idealmente usar SMTP transaccional en producción y hacer una prueba real. En Live Server local no funcionará la API y se abrirá un borrador por correo.
+## Formulario
+Por defecto **NO se envía automáticamente**: abre un borrador de correo que el usuario debe enviar.
+
+Para activar el envío directo:
+1. Sube `api/cotizacion.php` a un hosting con PHP.
+2. Configura un SMTP transaccional (o `mail()` con la variable `EBANO_MAIL_FROM`, un correo real del dominio). Verifica SPF y DKIM.
+3. Haz que el endpoint responda `{"ok":true}` y descarte las solicitudes que traen el campo `website` con contenido.
+4. Cambia `data-api="off"` por `data-api="on"` en `#quote-form`.
+5. Envía una solicitud de prueba real. Si el servidor falla, el sitio vuelve solo al borrador de correo.
 
 ## Publicación
-Sube el contenido de esta carpeta al directorio web. Verifica HTTPS, permisos, logos y formularios. Si prefieres no usar PHP, puedes eliminar `api/` y conservar la alternativa de correo.
+Sube el contenido de esta carpeta al directorio web. Verifica HTTPS, permisos, logos y formulario. Cambia el número de versión `?v=` de `styles.css` y `app.js` en cada publicación para evitar la caché.
 
 ## Fotos y permisos
-Las fotografías de José Tomás y los eventos reales permanecen sin manipulación de identidad. Confirma autorización para publicar imágenes donde aparezcan terceros.
+Las fotografías de José Tomás y de los eventos reales se publican sin manipular rostros ni identidad. Confirma la autorización para publicar imágenes donde aparezcan terceros.
 
 ## Condiciones
-Se eliminó el mínimo automático de 15 días porque no está confirmado para todos los servicios. Se mantiene la fecha no anterior al día actual en el navegador.
+No hay un mínimo automático de días de anticipación, porque no está confirmado para todos los servicios. El navegador solo impide elegir fechas pasadas.

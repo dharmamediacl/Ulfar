@@ -4,20 +4,33 @@
 <head>
 <meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>ébano | Eventos &amp; Experiencias · Del fuego al encuentro</title>
-<meta content="ébano diseña y produce experiencias privadas, parrillas en vivo y eventos corporativos. Hospitalidad, montaje y coordinación a medida." name="description"/>
+<meta content="ébano diseña y produce experiencias privadas, parrillas en vivo y eventos corporativos en Ñuble y la Región Metropolitana. Hospitalidad, montaje y coordinación a medida." name="description"/>
 <meta content="#3E2A1E" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<!-- Open Graph: completar og:url y og:image con URL absoluta al publicar -->
+<meta content="website" property="og:type"/>
+<meta content="es_CL" property="og:locale"/>
+<meta content="ébano" property="og:site_name"/>
+<meta content="ébano | Eventos &amp; Experiencias" property="og:title"/>
+<meta content="Experiencias privadas, parrillas en vivo y eventos corporativos. Del fuego al encuentro." property="og:description"/>
+<meta content="assets/fotos/hero-ebano.webp" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="assets/marca/ebano-oscuro.svg" rel="icon" type="image/svg+xml"/>
-<link href="styles.css?v=20261020-2" rel="stylesheet"/><script defer="" src="app.js?v=20261020-2"></script>
+<link href="assets/marca/isotipo.svg" rel="icon" type="image/svg+xml"/>
+<link as="image" href="assets/fotos/hero-ebano.webp" rel="preload"/>
+<link href="styles.css?v=20261022" rel="stylesheet"/><script defer="" src="app.js?v=20261022"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"ébano — Eventos & Experiencias","description":"Experiencias privadas, parrillas en vivo y eventos corporativos.","email":"hola@ebano.dharmamedia.cl","areaServed":[{"@type":"AdministrativeArea","name":"Región de Ñuble"},{"@type":"AdministrativeArea","name":"Región Metropolitana de Santiago"}],"slogan":"Del fuego al encuentro."}
+</script>
 </head>
 <body class="home">
-<!-- HEADER ORIGINAL: logo centrado y navegación minimalista -->
-<a class="skip" href="#inicio">Saltar al contenido</a>
+<!-- HEADER: logo centrado y navegación minimalista -->
+<a class="skip" href="#nosotros">Saltar al contenido</a>
 <header class="header" id="top" role="banner">
 <nav aria-label="Navegación principal" class="nav shell">
 <div class="nav-left"><a href="#nosotros">Nosotros</a><a href="#experiencias">Experiencias</a></div>
-<a aria-label="Ébano, volver al inicio" class="logo" href="#inicio"><img alt="ébano" src="assets/marca/ebano-marfil.svg" width="170"/></a>
+<a aria-label="Ébano, volver al inicio" class="logo" href="#inicio"><img alt="ébano" height="61" src="assets/marca/ebano-oscuro.svg" width="170"/></a>
 <div class="nav-right"><a href="#proceso">Cómo trabajamos</a><a class="nav-cta" href="#contacto">Cotizar <span aria-hidden="true">↗</span></a></div>
 <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" type="button"><span></span><span></span></button>
 </nav>
@@ -28,9 +41,9 @@
 <main id="inicio">
 <!-- 00 / HERO — CONSERVAR DISEÑO ORIGINAL -->
 <section aria-labelledby="hero-title" class="hero">
-<div aria-label="Parrilla en vivo y encuentro al aire libre" class="hero-photo" role="img">
-</div>
+<div aria-label="Parrilla en vivo y encuentro al aire libre" class="hero-photo" role="img"></div>
 <div aria-hidden="true" class="hero-shade"></div>
+<div aria-hidden="true" class="hero-wordmark"></div>
 <div class="hero-inner shell">
 <div class="hero-copy">
 <p class="eyebrow light">
@@ -54,8 +67,8 @@
       AL ENCUENTRO.
     </p>
 </div>
-<span class="hero-index">
-    01 / UNA FORMA DE REUNIRNOS
+<span aria-hidden="true" class="hero-index">
+    00 / UNA FORMA DE REUNIRNOS
   </span>
 </section>
 <!-- 01 / QUIÉNES SOMOS -->
@@ -113,9 +126,9 @@
 </header>
 <div class="services-grid">
 <!-- 01 / PARRILLADAS PREMIUM -->
-<article class="service-card">
+<article class="service-card service-card--feature">
 <a aria-label="Cotizar Parrilladas Premium" class="service-image" data-service="Parrilladas Premium" href="#contacto">
-<img alt="Parrilla real con carnes y embutidos" loading="lazy" src="assets/fotos/parrilla-carnes-real.webp"/>
+<img alt="Parrilla con costillas y embutidos en un evento al aire libre" decoding="async" height="941" loading="lazy" width="1672" src="assets/fotos/parrilla-carnes-real.webp"/>
 <span aria-hidden="true" class="service-image-arrow">↗</span>
 </a>
 <div class="service-content">
@@ -135,7 +148,7 @@
 <!-- 02 / CORPORATE GRILL -->
 <article class="service-card">
 <a aria-label="Cotizar Corporate Grill" class="service-image" data-service="Corporate Grill" href="#contacto">
-<img alt="Dos parrillas en una preparación real al aire libre" loading="lazy" src="assets/fotos/equipo-parrillas-real.webp"/>
+<img alt="Dos parrilleros junto a parrillas cargadas de anticuchos" decoding="async" height="1672" loading="lazy" width="941" src="assets/fotos/equipo-parrillas-real.webp"/>
 <span aria-hidden="true" class="service-image-arrow">↗</span>
 </a>
 <div class="service-content">
@@ -155,7 +168,7 @@
 <!-- 03 / SUNSET EXPERIENCE -->
 <article class="service-card">
 <a aria-label="Cotizar Sunset Experience" class="service-image" data-service="Sunset Experience" href="#contacto">
-<img alt="Cordero real cocinándose al fuego" loading="lazy" src="assets/fotos/cordero-al-fuego-real.webp"/>
+<img alt="Cordero al palo cocinándose junto al fuego al atardecer" decoding="async" height="1672" loading="lazy" width="941" src="assets/fotos/cordero-al-fuego-real.webp"/>
 <span aria-hidden="true" class="service-image-arrow">↗</span>
 </a>
 <div class="service-content">
@@ -175,7 +188,7 @@
 <!-- 04 / CORPORATE EVENTS -->
 <article class="service-card">
 <a aria-label="Cotizar Corporate Events" class="service-image" data-service="Corporate Events" href="#contacto">
-<img alt="Fotografía de ambientación y producción de eventos" loading="lazy" src="assets/fotos/ebano-corporativo.webp"/>
+<img alt="Cena de evento al aire libre con mesas iluminadas por guirnaldas" decoding="async" height="508" loading="lazy" width="764" src="assets/fotos/ebano-corporativo.webp"/>
 <span aria-hidden="true" class="service-image-arrow">↗</span>
 </a>
 <div class="service-content">
@@ -195,7 +208,7 @@
 <!-- 05 / BRAND ACTIVATION -->
 <article class="service-card">
 <a aria-label="Cotizar Brand Activation" class="service-image" data-service="Brand Activation" href="#contacto">
-<img alt="Detalle de trabajo al fuego" loading="lazy" src="assets/fotos/oficio-en-vivo.webp"/>
+<img alt="Detalle de trabajo al fuego" decoding="async" loading="lazy" src="assets/fotos/oficio-en-vivo.webp"/>
 <span aria-hidden="true" class="service-image-arrow">↗</span>
 </a>
 <div class="service-content">
@@ -213,9 +226,9 @@
 </div>
 </article>
 <!-- 06 / PRIVATE EVENTS -->
-<article class="service-card">
+<article class="service-card service-card--feature">
 <a aria-label="Cotizar Private Events" class="service-image" data-service="Private Events" href="#contacto">
-<img alt="Preparación gastronómica al fuego" loading="lazy" src="assets/fotos/ebano-fuego.webp"/>
+<img alt="Preparación gastronómica al fuego" decoding="async" loading="lazy" src="assets/fotos/ebano-fuego.webp"/>
 <span aria-hidden="true" class="service-image-arrow">↗</span>
 </a>
 <div class="service-content">
@@ -260,7 +273,7 @@
 <div class="work-gallery">
 <!-- IMAGEN PRINCIPAL -->
 <figure class="work-item work-item-main">
-<img alt="Cortes de carne cocidos sobre una tabla de madera" decoding="async" loading="lazy" src="assets/fotos/cortes-tabla-real.webp"/>
+<img alt="Cortes de carne a punto, laminados sobre una tabla de madera" decoding="async" height="1448" loading="lazy" width="1086" src="assets/fotos/cortes-tabla-real.webp"/>
 <figcaption>01 / EL PRODUCTO</figcaption>
 </figure>
 <!-- DETALLE GASTRONÓMICO -->
@@ -268,17 +281,16 @@
 <img alt="Detalle gastronómico de parrilla" decoding="async" loading="lazy" src="assets/fotos/producto-parrilla.webp"/>
 <figcaption>02 / LA PARRILLA</figcaption>
 </figure>
-<!-- PREPARACIÓN -->
+<!-- OFICIO (foto vertical en módulo angosto) -->
 <figure class="work-item work-item-process">
-<img alt="José Tomás en labores reales de preparación" decoding="async" loading="lazy" src="assets/fotos/jose-tomas-preparacion-real.webp"/>
-<figcaption>03 / LA PREPARACIÓN</figcaption>
+<img alt="José Tomás sazonando un corte de carne antes de la parrilla" decoding="async" loading="lazy" src="assets/fotos/jose-tomas-sazonando-real.webp"/>
+<figcaption>03 / EL OFICIO</figcaption>
 </figure>
-<!-- MONTAJE -->
+<!-- PREPARACIÓN (foto horizontal en módulo ancho) -->
 <figure class="work-item work-item-setting">
-<img alt="José Tomás sazonando carne para la parrilla" decoding="async" loading="lazy" src="assets/fotos/jose-tomas-sazonando-real.webp"/>
-<figcaption>04 / EL OFICIO</figcaption>
+<img alt="José Tomás preparando carnes en una terraza iluminada antes del evento" decoding="async" loading="lazy" src="assets/fotos/jose-tomas-preparacion-real.webp"/>
+<figcaption>04 / LA PREPARACIÓN</figcaption>
 </figure>
-<!-- EVENTO -->
 
 </div>
 <div class="work-footer">
@@ -300,7 +312,7 @@
 <div class="shell jose-grid">
 <!-- FOTOGRAFÍA REAL -->
 <figure class="jose-photo">
-<img alt="José Tomás Torres trabajando frente a la parrilla" decoding="async" loading="lazy" src="assets/fotos/jose-tomas-parrilla-real.webp"/>
+<img alt="José Tomás Torres frente a una parrilla con cortes al fuego" decoding="async" loading="lazy" src="assets/fotos/jose-tomas-parrilla-real.webp"/>
 <figcaption>
         JOSÉ TOMÁS TORRES / ÉBANO
       </figcaption>
@@ -443,40 +455,40 @@
         Nosotros nos encargamos de hacerlo realidad.
       </p>
 </header>
-<div class="process-steps">
-<article class="process-step">
+<ol class="process-steps">
+<li class="process-step">
 <span class="process-number">01</span>
-<h3>Cuéntanos<br/>tu idea.</h3>
+<h3>Cuéntanos <br/>tu idea.</h3>
 <p>
           Conocemos tu evento, fecha,
           ubicación e invitados.
         </p>
-</article>
-<article class="process-step">
+</li>
+<li class="process-step">
 <span class="process-number">02</span>
-<h3>Diseñamos<br/>tu propuesta.</h3>
+<h3>Diseñamos <br/>tu propuesta.</h3>
 <p>
           Definimos servicios, alcance
           y cotización personalizada.
         </p>
-</article>
-<article class="process-step">
+</li>
+<li class="process-step">
 <span class="process-number">03</span>
-<h3>Planificamos<br/>cada detalle.</h3>
+<h3>Planificamos <br/>cada detalle.</h3>
 <p>
           Coordinamos personal, proveedores,
           equipamiento y tiempos.
         </p>
-</article>
-<article class="process-step">
+</li>
+<li class="process-step">
 <span class="process-number">04</span>
-<h3>Hacemos<br/>que suceda.</h3>
+<h3>Hacemos <br/>que suceda.</h3>
 <p>
           Ejecutamos y supervisamos
           la producción del evento.
         </p>
-</article>
-</div>
+</li>
+</ol>
 <div class="process-footer">
 <span>
         PLANIFICACIÓN · COORDINACIÓN · PRODUCCIÓN
@@ -648,7 +660,7 @@
 <h3>Cuéntanos sobre tu evento.</h3>
 <p>Los campos con * son obligatorios.</p>
 </div>
-<form action="api/cotizacion.php" class="quote-form" id="quote-form" method="post">
+<form action="api/cotizacion.php" class="quote-form" data-api="off" id="quote-form" method="post" novalidate="">
 <div class="quote-fields">
 <!-- NOMBRE -->
 <div class="quote-field">
@@ -677,7 +689,7 @@
 <label for="quote-phone">
               WhatsApp *
             </label>
-<input autocomplete="tel" id="quote-phone" name="telefono" placeholder="+56 9 1234 5678" required="" type="tel"/>
+<input autocomplete="tel" id="quote-phone" inputmode="tel" name="telefono" pattern="[+0-9 ()\-]{8,20}" placeholder="+56 9 1234 5678" required="" title="Ingresa un número válido, por ejemplo +56 9 1234 5678" type="tel"/>
 </div>
 <!-- TIPO DE EVENTO -->
 <div class="quote-field quote-field-full">
@@ -723,14 +735,14 @@
 <label for="quote-location">
               Ciudad o comuna *
             </label>
-<input id="quote-location" name="ubicacion" placeholder="Ej. Chillán, Las Condes" required="" type="text"/>
+<input autocomplete="address-level2" id="quote-location" name="ubicacion" placeholder="Ej. Chillán, Las Condes" required="" type="text"/>
 </div>
 <!-- ASISTENTES -->
 <div class="quote-field">
 <label for="quote-guests">
               Invitados aproximados
             </label>
-<input id="quote-guests" min="1" name="invitados" placeholder="Ej. 50" step="1" type="number"/>
+<input id="quote-guests" inputmode="numeric" min="1" name="invitados" placeholder="Ej. 50" step="1" type="number"/>
 </div>
 <!-- PRESUPUESTO -->
 <div class="quote-field">
@@ -763,7 +775,12 @@
 <label for="quote-message">
               Cuéntanos tu idea
             </label>
-<textarea id="quote-message" name="mensaje" placeholder="¿Qué tienes en mente para tu evento?" rows="4"></textarea>
+<textarea id="quote-message" maxlength="1500" name="mensaje" placeholder="¿Qué tienes en mente para tu evento?" rows="4"></textarea>
+</div>
+<!-- Anti-spam: campo trampa invisible, los humanos lo dejan vacío -->
+<div aria-hidden="true" class="quote-hp">
+<label for="quote-website">No completar</label>
+<input autocomplete="off" id="quote-website" name="website" tabindex="-1" type="text"/>
 </div>
 </div>
 <div class="quote-actions">
@@ -776,7 +793,7 @@
             requerimientos y alcance de tu evento.
           </p>
 </div>
-<p aria-live="polite" class="quote-status" id="quote-status" role="status"></p>
+<p class="quote-status" id="quote-status" role="status"></p>
 </form>
 </div>
 </div>
@@ -819,7 +836,7 @@
 <!-- IDENTIDAD -->
 <div class="footer-brand">
 <a aria-label="Ébano — Ir al inicio" class="footer-logo" href="#inicio">
-<img alt="Ébano — Eventos &amp; Experiencias" loading="lazy" src="assets/marca/ebano-marfil.svg" width="180"/>
+<img alt="ébano — Eventos &amp; Experiencias" height="65" loading="lazy" src="assets/marca/ebano-marfil.svg" width="180"/>
 </a>
 <p>
           Eventos &amp; Experiencias
@@ -830,7 +847,7 @@
 </div>
 <!-- NAVEGACIÓN -->
 <nav aria-label="Navegación del pie de página" class="footer-nav">
-<h3>EXPLORA</h3>
+<h2>EXPLORA</h2>
 <a href="#nosotros">Quiénes somos</a>
 <a href="#experiencias">Experiencias</a>
 <a href="#nuestro-trabajo">Nuestro trabajo</a>
@@ -840,17 +857,17 @@
 </nav>
 <!-- SERVICIOS -->
 <nav aria-label="Servicios de Ébano" class="footer-services">
-<h3>EXPERIENCIAS</h3>
-<a href="#experiencias">Parrilladas Premium</a>
-<a href="#experiencias">Corporate Grill</a>
-<a href="#experiencias">Sunset Experience</a>
-<a href="#experiencias">Corporate Events</a>
-<a href="#experiencias">Brand Activation</a>
-<a href="#experiencias">Private Events</a>
+<h2>EXPERIENCIAS</h2>
+<a data-service="Parrilladas Premium" href="#contacto">Parrilladas Premium</a>
+<a data-service="Corporate Grill" href="#contacto">Corporate Grill</a>
+<a data-service="Sunset Experience" href="#contacto">Sunset Experience</a>
+<a data-service="Corporate Events" href="#contacto">Corporate Events</a>
+<a data-service="Brand Activation" href="#contacto">Brand Activation</a>
+<a data-service="Private Events" href="#contacto">Private Events</a>
 </nav>
 <!-- CONTACTO -->
 <div class="footer-contact">
-<h3>HABLEMOS</h3>
+<h2>HABLEMOS</h2>
 <a class="footer-email" href="mailto:hola@ebano.dharmamedia.cl">
           hola@ebano.dharmamedia.cl
         </a>
@@ -874,7 +891,7 @@
 <div class="footer-bottom">
 <span>
         © <span id="footer-year">2026</span>
-        Ébano — Eventos &amp; Experiencias.
+        ébano — Eventos &amp; Experiencias.
       </span>
 <div class="footer-bottom-links">
 <a href="#inicio">
@@ -883,20 +900,12 @@
 </div>
 <span class="footer-credit">
         Estrategia &amp; desarrollo por
-        <a href="https://www.dharmamedia.cl/" rel="noopener noreferrer" target="_blank">
-          Dharma Media
+        <a href="https://www.dharmamedia.cl/" rel="noopener" target="_blank">
+          Dharma Media<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
         </a>
 </span>
 </div>
 </div>
 </footer>
-<!-- AÑO AUTOMÁTICO -->
-<script>
-  const footerYear = document.getElementById("footer-year");
-
-  if (footerYear) {
-    footerYear.textContent = new Date().getFullYear();
-  }
-</script>
 </body>
 </html>
