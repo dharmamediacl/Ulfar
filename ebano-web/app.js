@@ -86,7 +86,7 @@ function formatDate(iso) {
 function openMailDraft(data, prefix = '') {
   const get = key => String(data.get(key) || '').trim() || 'No indicado';
   const fecha = String(data.get('fecha') || '').trim();
-  const subject = 'Cotización ébano — ' + get('servicio');
+  const subject = 'Cotización ÉBANO — ' + get('servicio');
   const body = [
     'SOLICITUD DE COTIZACIÓN — ÉBANO', '',
     'Nombre: ' + get('nombre'), 'Empresa: ' + get('empresa'),

@@ -4,15 +4,32 @@ Archivos: `index.html`, `styles.css`, `app.js` y `assets/` (`marca/`, `fotos/`, 
 
 **Para revisarlo en local usa un servidor** (Live Server, `python3 -m http.server`, etc.). Si abres `index.html` con doble clic (`file://`), el navegador bloquea las texturas SVG (se usan como máscara CSS) y el resto del sitio funciona igual.
 
-## Archivos pendientes de subir
+## Marca (desde el Manual de identidad visual 2026)
 
-El sitio ya apunta a estas rutas. Mientras no existan, en su lugar se verá el color de fondo.
+`assets/marca/` contiene los vectores oficiales del manual en Figma:
+
+| Archivo | Uso en el sitio |
+|---|---|
+| `ebano-logotipo.svg` | Principal a color (Ébano + hoja Arcilla). Header sobre Marfil |
+| `ebano-logotipo-negativo.svg` | Marfil + hoja Arcilla. Footer sobre fondo Noche |
+| `ebano-logotipo-mono-marfil.svg` | Una tinta clara. Hero sobre foto con velo Ébano 45 % |
+| `ebano-logotipo-mono-ebano.svg` | Una tinta oscura (disponible) |
+| `ebano-isotipo.svg` / `ebano-isotipo-negativo.svg` | Favicon y firma del cierre |
+
+Reglas del manual que aplica el CSS:
+- Logotipo de 160 px de ancho como mínimo. Nunca se reescribe con una fuente.
+- Arcilla como texto solo sobre Papel. Sobre Marfil se usa solo como acento gráfico.
+- Oliva no se usa en texto pequeño, porque sobre Papel da 4,2 : 1.
+- Etiquetas en Inter 600, 10 px, +20 % de tracking y versales. Titulares en Instrument Serif con −1 % de tracking.
+- Fotos con tratamiento «saturación −18 %, contraste +4 %, leve calidez», salvo las de José Tomás.
+- Grafismos: una familia por superficie, siempre recortada por el borde. Vetas al 7 % en Nosotros y humo al 6–8 % en Cómo trabajamos, Cierre y Footer.
+
+## Fotos pendientes de subir
+
+Mientras no existan, en su lugar se verá el color de fondo.
 
 | Ruta | Contenido |
 |---|---|
-| `assets/marca/ebano-oscuro.svg` | Logotipo ébano en color ébano (header al hacer scroll) |
-| `assets/marca/ebano-marfil.svg` | Logotipo ébano en marfil (logotipo grande del hero y footer) |
-| `assets/marca/isotipo.svg` | Isotipo «é» con hoja arcilla (favicon) |
 | `assets/fotos/hero-ebano.webp` | Foto del hero (parrillero con delantal ébano, formato horizontal) |
 | `assets/fotos/montaje-detalles.webp` | Mesa con platos, romero y cuencos (sección Nosotros) |
 | `assets/fotos/producto-parrilla.webp` | Primer plano de pinzas sobre costillas (galería 02) |
@@ -45,8 +62,4 @@ El campo `website` es una trampa anti-spam: si llega con contenido, el servidor 
 
 Colores: #3E2A1E ébano, #9C5A43 arcilla, #EFE6DE marfil, #77755F oliva, #D0B99E arena, #F8F3EC papel. Tipografías: Instrument Serif + Inter.
 
-Las texturas de marca (`vetas`, `humo`, `hojas`) se aplican como máscara CSS, así toman cualquier color de la paleta:
-
-- vetas: sección Nosotros
-- hojas: Cómo trabajamos
-- humo: Cierre
+Además de la paleta principal, el sitio usa Noche #1C130D para los fondos más oscuros. Los grafismos se aplican como máscara CSS, así toman cualquier color de la paleta. El patrón de hojas queda reservado para matrimonios y packaging, como indica el manual.

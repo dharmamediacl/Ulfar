@@ -1,7 +1,7 @@
 # ébano | Guía de publicación
 
 ## Antes de subir
-1. Sube los logos y las fotos que faltan en `assets/` (la lista está en `README.md`).
+1. Sube las fotos que faltan en `assets/fotos/` (la lista está en `README.md`). Los logos oficiales ya están incluidos.
 2. Revisa el sitio con un servidor local (Live Server). Prueba en móvil y escritorio: menú, preguntas frecuentes y formulario.
 3. Completa `og:image` (URL absoluta), `og:url` y la canonical con el dominio final.
 
